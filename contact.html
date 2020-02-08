@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script
+      src="https://kit.fontawesome.com/8dadb771df.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Source+Sans+Pro:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/thick-martini-icon.png" />
+    <title>Union Hill Cocktail Bar & Lounge</title>
+  </head>
+  <body class="container">
+    <div class="navbar">
+      <input type="checkbox" class="navbar__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navbar__button">
+        <span class="navbar__icon">&nbsp; </span>
+      </label>
+      <div class="navbar__background">&nbsp;</div>
+
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="menu.html" class="navbar__link">Menu</a>
+          </li>
+          <li class="navbar__item">
+            <a href="bartenders.html" class="navbar__link">Bartenders</a>
+          </li>
+          <li class="navbar__item">
+            <a href="events.html" class="navbar__link">Events</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header--page">
+      <h1 class="header__title header__title--main">Union Hill</h1>
+      <h2 class="header__title header__title--sub">
+        Cocktail Bar & Lounge
+      </h2>
+    </header>
+    <section class="about__content">
+      <h2 class="heading-2 mb-sm">CONTACT US</h2>
+      <p class="paragraph">
+        Have any questions or feedback? Interested in a having a private event
+        at Union Hill? <br />
+        Please enter in your details below and we'll get back to you in a day or
+        two.
+      </p>
+    </section>
+
+    <section class="contact-form">
+      <form action="#" class="form">
+        <div class="row">
+          <div class="form__group">
+            <input
+              type="text"
+              class="contact__input"
+              placeholder="Full name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Full name</label>
+          </div>
+
+          <div class="form__group">
+            <input
+              type="email"
+              class="contact__input"
+              placeholder="Email address"
+              id="email"
+              required
+            />
+            <label for="email" class="form__label">Email address</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-div">
+            <textarea
+              type="textarea"
+              id="message"
+              class="contact__input"
+              name="message"
+              style="height:15rem;resize:vertical;"
+              placeholder="Enter your message here"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </form>
+      <a href="#popup" class="btn btn--white">
+        Submit
+      </a>
+    </section>
+
+    <section class="map-container">
+      <div id="map"></div>
+    </section>
+
+    <section class="about__content">
+      <p class="paragraph btn-spacing"></p>
+
+      <a href="index.html" class="btn btn--white">Home</a>
+    </section>
+
+    <section class="contact">
+      <div class="contact__details">
+        <p class="paragraph contact__address">
+          5555 5th Avenue <br />
+          Seattle, WA 55555 <br />
+          555.987.1234<br />
+          <a href="contact.html" class="feedback__link">Map </a>
+        </p>
+
+        <p class="paragraph contact__hours">
+          Hours of operation:
+          <br />
+          Sun-Thurs: 4pm - 12am
+          <br />
+          Fri & Sat: 4pm-2am
+        </p>
+      </div>
+      <div class="contact__signup">
+        <p class="contact--paragraph">
+          Sign up with your email to receive our news and updates:
+        </p>
+        <form action="#" class="contact__form">
+          <input
+            type="email"
+            class="contact__input"
+            placeholder="Email Address"
+            required
+          />
+          <a href="#popup-email" class="btn btn--white">Sign Up</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="page-links contact--paragraph">
+      <a href="index.html" class="page-links__link">Home</a>
+      <a href="menu.html" class="page-links__link">Menu</a>
+      <a href="bartenders.html" class="page-links__link">Bartenders</a>
+      <a href="events.html" class="page-links__link">Events</a>
+      <a href="contact.html" class="page-links__link">Contact</a>
+    </section>
+
+    <section class="feedback">
+      <p class="contact--paragraph">
+        Any questions or feedback? Feel free to reach out
+        <a href="contact.html" class="feedback__link">here </a>
+      </p>
+    </section>
+
+    <section class="social">
+      <ul class="social__icons">
+        <li class="social__icon">
+          <a
+            href="https://www.facebook.com/"
+            class="fab fa-facebook social__icon--link"
+            target="_blank"
+          ></a>
+        </li>
+        <li class="social__icon">
+          <a
+            href="https://www.instagram.com"
+            class="fab fa-instagram social__icon--link"
+            target="_blank"
+          ></a>
+        </li>
+        <li class="social__icon ">
+          <a
+            href="https://twitter.com"
+            class="fab fa-twitter social__icon--link"
+            target="_blank"
+          ></a>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright paragraph">Copyright 2020 @ Union Hill</p>
+    </footer>
+
+    <div class="popup" id="popup-email">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="https://images.unsplash.com/photo-1514361526511-a1ecd83f89d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80.jpg"
+            alt="Bar photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#contact" class="popup__close">&times;</a>
+          <h2 class="popup__right--header heading-2 border-bottom">
+            Thank you!
+          </h2>
+          <p class="popup__right--text paragraph">
+            We appreciate you signing up for our newsletter. Since this is a
+            mock site your info has not gone anywhere. Have a good one!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function initMap() {
+        let options = {
+          zoom: 13,
+          center: { lat: 47.606209, lng: -122.332069 },
+          styles: [
+            {
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#002E65'
+                }
+              ]
+            },
+            {
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#e8e9eb'
+                }
+              ]
+            },
+            {
+              elementType: 'labels.text.stroke',
+              stylers: [
+                {
+                  color: '#1a3646'
+                }
+              ]
+            },
+            {
+              featureType: 'administrative.country',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#4b6878'
+                }
+              ]
+            },
+            {
+              featureType: 'administrative.land_parcel',
+              elementType: 'labels',
+              stylers: [
+                {
+                  visibility: 'off'
+                }
+              ]
+            },
+            {
+              featureType: 'administrative.land_parcel',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#64779e'
+                }
+              ]
+            },
+            {
+              featureType: 'administrative.province',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#4b6878'
+                }
+              ]
+            },
+            {
+              featureType: 'landscape.man_made',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#334e87'
+                }
+              ]
+            },
+            {
+              featureType: 'landscape.natural',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#023e58'
+                }
+              ]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#283d6a'
+                }
+              ]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text',
+              stylers: [
+                {
+                  visibility: 'off'
+                }
+              ]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#6f9ba5'
+                }
+              ]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.stroke',
+              stylers: [
+                {
+                  color: '#1d2c4d'
+                }
+              ]
+            },
+            {
+              featureType: 'poi.business',
+              stylers: [
+                {
+                  visibility: 'off'
+                }
+              ]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry.fill',
+              stylers: [
+                {
+                  color: '#023e58'
+                }
+              ]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text',
+              stylers: [
+                {
+                  visibility: 'off'
+                }
+              ]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#3C7680'
+                }
+              ]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#5C84B4'
+                }
+              ]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#98a5be'
+                }
+              ]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.stroke',
+              stylers: [
+                {
+                  color: '#1d2c4d'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#c6852f'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [
+                {
+                  color: '#255763'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#b0d5ce'
+                }
+              ]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.stroke',
+              stylers: [
+                {
+                  color: '#023e58'
+                }
+              ]
+            },
+            {
+              featureType: 'road.local',
+              elementType: 'labels',
+              stylers: [
+                {
+                  visibility: 'off'
+                }
+              ]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#98a5be'
+                }
+              ]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'labels.text.stroke',
+              stylers: [
+                {
+                  color: '#1d2c4d'
+                }
+              ]
+            },
+            {
+              featureType: 'transit.line',
+              elementType: 'geometry.fill',
+              stylers: [
+                {
+                  color: '#283d6a'
+                }
+              ]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#3a4762'
+                }
+              ]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [
+                {
+                  color: '#0e1626'
+                }
+              ]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [
+                {
+                  color: '#4e6d70'
+                }
+              ]
+            }
+          ]
+        };
+
+        let map = new google.maps.Map(document.getElementById('map'), options);
+
+        let marker = new google.maps.Marker({
+          position: { lat: 47.610696, lng: -122.335715 },
+          map: map
+        });
+        var infoWindow = new google.maps.InfoWindow({
+          content: `<p class="infoWindow">Union Hill<br> 5555 5th Ave<p>`
+        });
+        marker.addListener('click', function() {
+          infoWindow.open(map, marker);
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDneY1LCFyyTJVxH5roX_CV_bNbAUuKPLs&callback=initMap"
+    ></script>
+  </body>
+</html>
