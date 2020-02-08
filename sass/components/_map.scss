@@ -1,0 +1,14 @@
+//********** GOOGLE MAP **********//
+.map-container {
+  grid-column: center-start / center-end;
+}
+#map {
+  margin-top: 10rem;
+  height: 60rem;
+  width: 100%;
+}
+.infoWindow {
+  color: $color-dark;
+  font-family: $font-primary;
+  font-weight: 700;
+}

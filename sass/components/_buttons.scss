@@ -1,0 +1,47 @@
+//********** BUTTONS **********//
+
+@mixin bggrad($c1, $c2, $angle: 155) {
+  background: linear-gradient(#{$angle}deg, $c1 0%, $c2 100%);
+}
+
+@mixin borgrad($c1, $c2, $angle: 155) {
+  border-image: linear-gradient(#{$angle}deg, $c1 0%, $c2 100%) 1 round;
+}
+
+@mixin someColor($c1, $c2) {
+  @include borgrad($c1, $c2, 155);
+  @include bggrad($c1, $c2, 155);
+
+  &:hover {
+    box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.5),
+      2px 2px 6px rgba(red($c2), green($c2), blue($c2), 0.4),
+      -2px -2px 6px rgba(red($c1), green($c1), blue($c1), 0.4);
+  }
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.btn {
+  font-family: $font-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.6em 1.6em;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.2s ease;
+
+  @include someColor($color-secondary, $color-primary);
+
+  &:hover {
+    color: rgba($color-light, 0.1);
+    text-shadow: 0 0 1px rgba($color-light, 0.2);
+    transform: scale(1);
+  }
+}
