@@ -79,7 +79,7 @@
       </p>
     </section>
 
-    <section class="left__content">
+    <div class="left__content">
       <h2 class="heading-2 mb-sm">Menu</h2>
       <p class="paragraph btn-spacing">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -89,14 +89,14 @@
       </p>
 
       <a href="menu.html" class="btn btn--white">Read More</a>
-    </section>
-    <section class="right__image--menu">
+    </div>
+    <div class="right__image--menu">
       &nbsp;
-    </section>
-    <section class="left__image--bartender">
+    </div>
+    <div class="left__image--bartender">
       &nbsp;
-    </section>
-    <section class="right__content">
+    </div>
+    <div class="right__content">
       <h2 class="heading-2 mb-sm">Bartenders</h2>
       <p class="paragraph btn-spacing">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -105,8 +105,8 @@
         maxime nostrum facilis.
       </p>
       <a href="bartenders.html" class="btn btn--white">Read More</a>
-    </section>
-    <section class="left__content">
+    </div>
+    <div class="left__content">
       <h2 class="heading-2 mb-sm">Events</h2>
       <p class="paragraph btn-spacing">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -115,10 +115,12 @@
         maxime nostrum facilis.
       </p>
       <a href="events.html" class="btn btn--white">Read More</a>
-    </section>
-    <section class="right__image--events">
+    </div>
+    <div class="right__image--events">
       &nbsp;
-    </section>
+    </div>
+
+    <!-- IMAGE GALLERY -->
     <section class="gallery">
       <figure class="gallery__item gallery__item--1">
         <img
@@ -266,16 +268,18 @@
         <p class="contact--paragraph">
           Sign up with your email to receive our news and updates:
         </p>
-        <form action="#" class="contact__form">
+
+        <form action="#popup-email" class="contact__form">
           <input
             type="email"
             class="contact__input"
+            name="email"
             placeholder="Email Address"
             required
           />
-          <a href="#popup-email" class="btn btn--white"
-            >Sign Up <span class="arrow"></span
-          ></a>
+          <button id="submit" type="submit" class="btn btn--white">
+            Sign Up
+          </button>
         </form>
       </div>
     </section>

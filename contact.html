@@ -65,7 +65,7 @@
     </section>
 
     <section class="contact-form">
-      <form action="#" class="form">
+      <form action="#popup-form" class="form">
         <div class="row">
           <div class="form__group">
             <input
@@ -103,10 +103,10 @@
             ></textarea>
           </div>
         </div>
+        <button type="submit" class="btn btn--white">
+          Sign Up
+        </button>
       </form>
-      <a href="#popup" class="btn btn--white">
-        Submit
-      </a>
     </section>
 
     <section class="map-container">
@@ -140,14 +140,16 @@
         <p class="contact--paragraph">
           Sign up with your email to receive our news and updates:
         </p>
-        <form action="#" class="contact__form">
+        <form action="#popup-email" class="contact__form">
           <input
             type="email"
             class="contact__input"
             placeholder="Email Address"
             required
           />
-          <a href="#popup-email" class="btn btn--white">Sign Up</a>
+          <button type="submit" class="btn btn--white">
+            Sign Up
+          </button>
         </form>
       </div>
     </section>
@@ -196,6 +198,28 @@
     <footer class="footer">
       <p class="copyright paragraph">Copyright 2020 @ Union Hill</p>
     </footer>
+
+    <div class="popup" id="popup-form">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img
+            src="https://images.unsplash.com/photo-1514361526511-a1ecd83f89d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80.jpg"
+            alt="Bar photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#contact" class="popup__close">&times;</a>
+          <h2 class="popup__right--header heading-2 border-bottom">
+            Thank you!
+          </h2>
+          <p class="popup__right--text paragraph">
+            We appreciate you reaching out. Since this is a mock site your info
+            has not gone anywhere. Have a good one!
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="popup" id="popup-email">
       <div class="popup__content">
@@ -520,7 +544,7 @@
     <script
       async
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=${api-key}&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoEFwcDiylH2AVT2OJrG1z7fa-LS1uuAk&callback=initMap"
     ></script>
   </body>
 </html>
