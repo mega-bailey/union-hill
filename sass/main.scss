@@ -1,5 +1,6 @@
 $color-primary: #c6852f;
 $color-secondary: #00397e;
+$color-secondary-light: #30bcb8;
 $color-light: #e8e9eb;
 $color-dark: #000000;
 
@@ -16,6 +17,15 @@ $font-display: 'Poiret One', cursive;
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px (10/16 browser default)
+
+  @media only screen and (max-width: 75em) {
+    //1200px
+    font-size: 56.25%;
+  }
+  @media only screen and (max-width: 56.25em) {
+    //900px
+    font-size: 50%;
+  }
 }
 
 body {
@@ -64,13 +74,17 @@ body {
   transform: translateX(-6rem);
   font-size: 2.5rem;
   color: rgba($color-primary, 0.4);
+  @media only screen and (max-width: 56.25em) {
+    //900px
+    transform: translateX(0);
+  }
 }
 
 //******  SECTIONS  ******//
 
 .container {
   display: grid;
-  grid-template-rows: repeat(12, min-content);
+  grid-template-rows: repeat(24, min-content);
   grid-template-columns:
     [navbar-start] 6rem [navbar-end full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
@@ -108,6 +122,10 @@ body {
       font-size: 8rem;
       line-height: 0.78;
       letter-spacing: 0.6rem;
+      @media only screen and (max-width: 37.5em) {
+        //600px
+        font-size: 7rem;
+      }
     }
     &--sub {
       font-size: 3rem;
@@ -117,7 +135,7 @@ body {
     }
   }
   &--page {
-    grid-column: center-start / full-end;
+    grid-column: center-start / center-end;
     height: 20vh;
     align-content: end;
     padding: 6rem 0 6rem 0;
@@ -138,6 +156,23 @@ body {
     padding: 10rem 10rem 10rem 0;
     &--drinks {
       grid-column: center-start / col-end 3;
+      @media only screen and (max-width: 37.5em) {
+        //600px
+        grid-column: center-start / center-end;
+      }
+    }
+    @media only screen and (max-width: 75em) {
+      //1200px
+      padding: 7rem 7rem 7rem 0;
+    }
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: center-start / col-end 6;
+      padding: 3rem 3rem 3rem 0;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      grid-column: center-start / center-end;
     }
   }
 }
@@ -152,6 +187,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: col-start 7 / full-end;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
   &__image--events {
     grid-column: col-start 5 / full-end;
@@ -163,6 +207,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: col-start 7 / full-end;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
   &__image--menupage {
     grid-column: col-start 5 / full-end;
@@ -174,6 +227,15 @@ body {
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: col-start 7 / full-end;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
   &__image--bartender1 {
     grid-column: col-start 5 / full-end;
@@ -185,6 +247,15 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: col-start 7 / full-end;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
   &__image--bartender3 {
     grid-column: col-start 5 / full-end;
@@ -196,6 +267,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: col-start 7 / full-end;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
   &__image--bartender5 {
     grid-column: col-start 5 / full-end;
@@ -207,6 +287,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: col-start 7 / full-end;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
 }
 
@@ -222,6 +311,15 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: full-start / col-end 3;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
   &__image--bartender2 {
     grid-column: full-start / col-end 4;
@@ -233,6 +331,15 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: full-start / col-end 3;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
   &__image--bartender4 {
     grid-column: full-start / col-end 4;
@@ -244,6 +351,15 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: full-start / col-end 3;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      display: none;
+      visibility: hidden;
+    }
   }
 }
 .right {
@@ -254,6 +370,24 @@ body {
     &--drinks {
       grid-column: col-start 6 / center-end;
       text-align: right;
+      @media only screen and (max-width: 37.5em) {
+        //600px
+        grid-column: center-start / center-end;
+        text-align: left;
+      }
+    }
+    @media only screen and (max-width: 75em) {
+      //1200px
+      padding: 7rem 0 7rem 7rem;
+    }
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      grid-column: col-start 4 / center-end;
+      padding: 3rem 0 3rem 3rem;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      grid-column: center-start / center-end;
     }
   }
 }
@@ -269,6 +403,12 @@ body {
   &__details {
     display: flex;
     margin-right: auto;
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      margin: 0 auto;
+      padding-bottom: 3rem;
+      text-align: center;
+    }
   }
 
   &__address {
@@ -278,15 +418,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      padding: 0 0 3rem 0;
+    }
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      flex-direction: column;
+    }
   }
   &__signup {
     align-items: center;
   }
   &--paragraph {
-    font-size: 2rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
     padding: 0 0 1rem 0;
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      text-align: center;
+      padding-top: 2rem;
+    }
   }
 
   &__input {
@@ -314,10 +466,21 @@ body {
         color: $color-dark;
       }
     }
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      width: 28rem;
+      height: 5rem;
+    }
   }
 
   .btn-signup {
     margin: 0.5rem;
+  }
+
+  @media only screen and (max-width: 75em) {
+    //1200px
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
@@ -327,7 +490,6 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 3rem 0 2rem 0;
-  display: inline-block;
 
   &__link {
     &,
@@ -347,6 +509,10 @@ body {
         transform: translateY(0.2rem);
       }
     }
+  }
+  @media only screen and (max-width: 37.5em) {
+    //600px
+    grid-column: center-start / center-end;
   }
 }
 
@@ -450,6 +616,21 @@ a {
     &:hover {
       color: $color-primary;
       transform: translateY(0.2rem);
+    }
+    @media only screen and (max-width: 56.25em) {
+      //900px
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: 56.25em) {
+    //900px
+    grid-column: full-start / full-end;
+    flex-direction: row;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-right: 10px;
     }
   }
 }

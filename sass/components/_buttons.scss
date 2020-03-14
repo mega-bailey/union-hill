@@ -13,9 +13,8 @@
   @include bggrad($c1, $c2, 155);
 
   &:hover {
-    box-shadow: 0 0 0px 1px rgba(255, 255, 255, 0.5),
-      2px 2px 6px rgba(red($c2), green($c2), blue($c2), 0.4),
-      -2px -2px 6px rgba(red($c1), green($c1), blue($c1), 0.4);
+    box-shadow: 2px 2px 7px rgba(red($c2), green($c2), blue($c2), 0.4),
+      -2px -2px 7px rgba(red($c1), green($c1), blue($c1), 0.4);
   }
 
   background-clip: text;
@@ -32,7 +31,8 @@
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  padding: 0.6em 1.6em;
+  padding: 0.8em 1.6em;
+  border: none;
   border-style: solid;
   border-width: 1px;
   transition: all 0.2s ease;
@@ -43,5 +43,14 @@
     color: rgba($color-light, 0.1);
     text-shadow: 0 0 1px rgba($color-light, 0.2);
     transform: scale(1);
+  }
+  &:active {
+    outline: none;
+    transform: translateY(1px);
+  }
+  @media only screen and (max-width: 56.25em) {
+    //900px
+
+    font-size: 1.6rem;
   }
 }
